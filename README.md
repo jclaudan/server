@@ -93,3 +93,4 @@ Pour arrêter et supprimer le conteneur:
 ```bash
 make mailhog-stop mailhog-rm
 ```
+
