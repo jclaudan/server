@@ -1,0 +1,19 @@
+test:
+  integration:
+    script:
+      # - "npm install"
+      - "npm run dev-setup"
+env_vars:
+  MONGO_URL: "mongodb://$(USER_MONGO):$(PASSWORD_MONGO)@$(HOST_MONGO):$(PORT_MONGO)/$(DATABASE_MONGO)"
+dependencies:
+  mongodb:
+    HOST: "HOST_MONGO"
+    PORT: "PORT_MONGO"
+    DATABASE_NAME: "DATABASE_MONGO"
+    USER: "USER_MONGO"
+    PASSWORD: "PASSWORD_MONGO"
+    import_data:
+      - target: "test"
+        path: "warehouse_umongo_fields_production_bkp_feb28.json"
+
+This email and its content belong to Wildcard. The enclosed information is confidential and may not be disclosed to any unauthorized person. If you have received it by mistake do not forward it and delete it from your system. Cet email et son contenu sont la propriété de Wildcard. L’information qu’il contient est confidentielle et ne peut être communiquée à des personnes non autorisées. Si vous l’avez reçu par erreur ne le transférez pas et supprimez-le.
