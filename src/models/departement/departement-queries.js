@@ -1,5 +1,4 @@
 import Departement from './departement-model'
-import { departementValidator } from './departement-validator'
 
 /**
  * Crée un département
@@ -14,13 +13,6 @@ import { departementValidator } from './departement-validator'
  * @returns {Promise.<DepartementMongooseDocument>} - Le département créé
  */
 export const createDepartement = async ({ _id, email }) => {
-  const validated = await departementValidator.validateAsync({
-    _id,
-    email,
-  })
-
-  if (validated.error) throw new Error(validated.error)
-
   const departement = new Departement({
     _id,
     email,

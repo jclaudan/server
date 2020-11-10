@@ -14,12 +14,8 @@ const section = 'candidat-sendMail'
 export const getConvocationBody = place => {
   const action = 'get-body-convocation'
   const { centre, date, candidat } = place
-  const { nom, adresse, geoloc, departement } = centre
+  const { nom, adresse } = centre
   const { _id, nomNaissance, codeNeph } = candidat
-
-  const [lon, lat] = geoloc.coordinates
-
-  const linkOfLocalisation = `http://www.openstreetmap.org/?mlat=${lat}&mlon=${lon}&zoom=24`
 
   const urlFAQ = getUrlFAQ()
   const token = getCandidatToken(_id)
@@ -50,8 +46,6 @@ export const getConvocationBody = place => {
     urlRESA,
     urlFAQ,
     contactezNous,
-    departement,
-    linkOfLocalisation,
   )
 
   return getHtmlBody(body)

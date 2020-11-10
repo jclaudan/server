@@ -58,17 +58,10 @@ import {
   verifyDelegueLevel,
 } from './middlewares'
 import config from '../../config'
-import { logsByFilters } from './logs-candidat-controllers'
 
 const router = express.Router()
 
 router.use(verifyRepartiteurLevel())
-
-router.get(
-  '/logs',
-  verifyUserLevel(config.userStatusLevels.admin),
-  logsByFilters,
-)
 
 /**
  * @swagger

@@ -7,7 +7,7 @@ import express from 'express'
 import auth from './auth'
 import admin from './admin'
 import candidat, { preSignup, emailValidation } from './candidat'
-import { verifyToken, getToken, setAccumulatorRequest } from './middlewares'
+import { verifyToken, getToken } from './middlewares'
 import { resetMyPassword } from './auth/admin-controllers'
 import { getCandidatConfig } from './candidat/candidat-config-controller'
 import publicRoutes from './public'
@@ -313,7 +313,7 @@ router.use('/public', publicRoutes)
 
 router.patch('/admin/me', resetMyPassword)
 router.post('/candidat/contact-us', getToken, contactUs)
-router.use('/candidat', verifyToken, verifyUser, setAccumulatorRequest, candidat)
+router.use('/candidat', verifyToken, verifyUser, candidat)
 router.use('/auth', auth)
 router.use('/admin', verifyToken, admin)
 

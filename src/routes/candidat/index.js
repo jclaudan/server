@@ -14,11 +14,8 @@ import {
   unbookPlace,
 } from './places-controllers'
 import { verifyAccesPlacesByCandidat } from './middlewares/verify-candidat'
-import { setAccumulatorRequest } from '../middlewares'
 
 const router = express.Router()
-
-router.use(setAccumulatorRequest)
 
 /**
  * @swagger
