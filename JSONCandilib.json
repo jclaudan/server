@@ -1,0 +1,108 @@
+{
+    "_id": {
+        "$oid": "5fa82e5d5733ab00516595c7"
+    },
+    "departements": [
+        "75",
+        "93"
+    ],
+    "signUpDate": {
+        "$date": "2020-11-08T17:43:57.298Z"
+    },
+    "status": "tech",
+    "email": "tech@example.com",
+    "password": "$2a$08$SBmQYskTrJgTw0/U4lQhPuQTMeVxKgyMG273vIY1HqYBtcKhIhlXO",
+    "createdAt": {
+        "$date": "2020-11-08T17:43:57.781Z"
+    },
+    "updatedAt": {
+        "$date": "2020-11-08T17:43:57.781Z"
+    },
+    "__v": 0
+}
+    {
+    "_id": {
+        "$oid": "5fa82e5d5733ab00516595c8"
+    },
+    "departements": [
+        "75",
+        "93"
+    ],
+    "signUpDate": {
+        "$date": "2020-11-08T17:43:57.298Z"
+    },
+    "status": "admin",
+    "email": "admin@example.com",
+    "password": "$2a$08$tsJB2vgc1QJvILSDToTuje3xIZYZa/nBA4MlGxGTmYGyTDMR/IChq",
+    "createdAt": {
+        "$date": "2020-11-08T17:43:57.781Z"
+    },
+    "updatedAt": {
+        "$date": "2020-11-08T17:43:57.781Z"
+    },
+    "__v": 0
+}
+    {
+    "_id": {
+        "$oid": "5fa82e5d5733ab00516595c9"
+    },
+    "departements": [
+        "75",
+        "93"
+    ],
+    "signUpDate": {
+        "$date": "2020-11-08T17:43:57.298Z"
+    },
+    "status": "delegue",
+    "email": "delegue@example.com",
+    "password": "$2a$08$jE6wNbQFXH.eLGguVO5t3uYlqWRF0EfSyBM91oopnlWE28g.DBmtu",
+    "createdAt": {
+        "$date": "2020-11-08T17:43:57.781Z"
+    },
+    "updatedAt": {
+        "$date": "2020-11-08T17:43:57.781Z"
+    },
+    "__v": 0
+}
+    {
+    "_id": {
+        "$oid": "5fa82e5d5733ab00516595ca"
+    },
+    "departements": [
+        "75"
+    ],
+    "signUpDate": {
+        "$date": "2020-11-08T17:43:57.298Z"
+    },
+    "status": "repartiteur",
+    "email": "admin75@example.com",
+    "password": "$2a$08$WTPAvF.2r87fyxpBMD5/BuNMj3yANhEf3QeWPxfXM9Oqn6nTeW6Wa",
+    "createdAt": {
+        "$date": "2020-11-08T17:43:57.781Z"
+    },
+    "updatedAt": {
+        "$date": "2020-11-08T17:43:57.781Z"
+    },
+    "__v": 0
+}
+    {
+    "_id": {
+        "$oid": "5fa82e5d5733ab00516595cb"
+    },
+    "departements": [
+        "93"
+    ],
+    "signUpDate": {
+        "$date": "2020-11-08T17:43:57.298Z"
+    },
+    "status": "repartiteur",
+    "email": "admin93@example.com",
+    "password": "$2a$08$x8uCs5.ikHQKbarQGRw3yelsE8RjYFIJsB8dlDLkl1wuyQk2eanB.",
+    "createdAt": {
+        "$date": "2020-11-08T17:43:57.781Z"
+    },
+    "updatedAt": {
+        "$date": "2020-11-08T17:43:57.781Z"
+    },
+    "__v": 0
+}

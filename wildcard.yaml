@@ -2,7 +2,7 @@ test:
   integration:
     script:
       # - "npm install"
-      - "npm run dev-setup"
+      # - "npm run dev-setup"
 env_vars:
   MONGO_URL: "mongodb://$(USER_MONGO):$(PASSWORD_MONGO)@$(HOST_MONGO):$(PORT_MONGO)/$(DATABASE_MONGO)"
 dependencies:
@@ -12,8 +12,11 @@ dependencies:
     DATABASE_NAME: "DATABASE_MONGO"
     USER: "USER_MONGO"
     PASSWORD: "PASSWORD_MONGO"
-    # Permet d'importer des data par collection target represente la collection
+    # Permet d'importer des data par collection target represente la collection    
+    import_data:
+      - target: "users"
+        path: "JSONCandilib.json"
     
     # import_data:
-    #   - target: "test"
+    #   - target: "departements"
     #     path: "warehouse_umongo_fields_production_bkp_feb28.json"
